@@ -35,12 +35,14 @@ class cityServies {
         }
     }
 
-    async updateCity (cityId){
+    async updateCity (cityId,data){
         try{
-            const city = await this.cityRepository.updateCity(cityId);
+            const city = await this.cityRepository.updateCity(cityId,data);
         }catch (error){
             console.log("seomthing went wrong in the services layer")
             throw {error}
         }
     }
 }
+
+module.exports = {cityServices};
