@@ -1,8 +1,8 @@
-const { CityRepository } = require ('../repostory/index.js') 
+const { CityRepository } = require ('../repository/index') 
 // for now only cityrepository because we have just saved that file only and in future we will add more by comma
 
-class cityServies {
-    constructor () {
+class cityService {
+    constructor (){
         this.cityRepository = new CityRepository();
     }
     async createCity (data){
@@ -45,4 +45,4 @@ class cityServies {
     }
 }
 
-module.exports = {cityServices};
+module.exports = cityService;
