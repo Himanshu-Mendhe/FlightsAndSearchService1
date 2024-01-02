@@ -5,7 +5,7 @@
 - create `.env` and add following -
      - `PORT = 3000;`
 -  inside `src/config` foldercreate a new file config.json and add
-'''json
+```json
 {
   "development": {
     "username": "<your db names>",
@@ -16,4 +16,4 @@
   }
 }
 
-'''    
+``````    
