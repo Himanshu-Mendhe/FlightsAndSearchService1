@@ -16,5 +16,9 @@
   }
 }
 
+<<<<<<< HEAD
 ```
 once you added db config, go to src folder from your terminal and execute npm sequelize db:create
+=======
+``````    
+>>>>>>> a981485e50c535153a615d54bf9bdd1001285de7
