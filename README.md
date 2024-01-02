@@ -8,8 +8,8 @@
 '''
 {
   "development": {
-    "username": "root",
-    "password": "himanshuT1!",
+    "username": <your db names>,
+    "password": <your db password>,
     "database": "flight_search_database_dev",
     "host": "127.0.0.1",
     "dialect": "mysql"
