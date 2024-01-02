@@ -1,9 +1,19 @@
-# DB design
-     - flight table
-     - airplane 
-     - city 
-     - airport 
-- Aflight belong to an airplane but an airplane could have multiple flights
-- city has many airports but one airport belong to city
-- one airport can have multiple flights but, a flight belong to ome airport
+# Wlecome to FlightAndService
+# project setup
+- clone the project on your local
+- `npm install`
+- create `.env` and add following -
+     - `PORT = 3000;`
+-  inside `src/config` foldercreate a new file config.json and add
+'''
+{
+  "development": {
+    "username": "root",
+    "password": "himanshuT1!",
+    "database": "flight_search_database_dev",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
 
+'''    
