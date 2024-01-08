@@ -59,7 +59,7 @@ const get = async (req,res) => {
             success :false,
             message : 'not able to get the city',
             err : error
-        })
+        }) 
     }
 }
 // PATCH -> /city/:id -> req.body

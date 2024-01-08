@@ -1,7 +1,7 @@
 const { CityRepository } = require ('../repository/index') 
 // for now only cityrepository because we have just saved that file only and in future we will add more by comma
 
-class cityService {
+class CityService {
     constructor (){
         this.cityRepository = new CityRepository();
     }
@@ -38,6 +38,7 @@ class cityService {
     async updateCity (cityId,data){
         try{
             const city = await this.cityRepository.updateCity(cityId,data);
+            return city;
         }catch (error){
             console.log("seomthing went wrong in the services layer")
             throw {error}
@@ -45,4 +46,4 @@ class cityService {
     }
 }
 
-module.exports = cityService;
+module.exports = CityService;
